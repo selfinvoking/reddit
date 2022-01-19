@@ -24,8 +24,8 @@ reddit = praw.Reddit(
     client_id=os.getenv('CLIENT_ID'),
     client_secret=os.getenv('CLIENT_SECRET'),
     user_agent="script",
-    username=os.getenv('USERNAME'),
-    password=os.getenv('PASSWORD'),
+    username=os.getenv('REDDIT_USERNAME'),
+    password=os.getenv('REDDIT_PASSWORD'),
 )
 
 # Grab our submissions

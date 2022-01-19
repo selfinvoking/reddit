@@ -23,11 +23,19 @@ mv .env.example .env
 virtualenv venv
 
 # activate the virtualenv
+# NOTE: On windows run .\venv\Scripts\activate.bat instead
 source venv/bin/activate
 
 # install dependencies
 pip install -r requirements.txt
 
 # run the script
+# NOTE: This prints results in the console, but also creates ./output.csv
 python response-rate-by-hour.py
+
+# Check ./output.csv
+
+# deactivate virtualenv when finished
+# NOTE: On windows run .\venv\Scripts\deactivate.bat instead
+deactivate
 ```
